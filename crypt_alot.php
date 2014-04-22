@@ -1,0 +1,9 @@
+<?php
+session_start();
+$value=$_GET["nameofexam"];
+$max=$_GET["max_question"];
+$_SESSION["max_question"]=$max;
+$_SESSION["exam_number"]=$value;
+$_SESSION["question_number"]=1;
+header('location:crypt-exam.php');
+?>
